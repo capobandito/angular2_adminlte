@@ -3,6 +3,7 @@
 
 # IDEs and editors
 /.idea
+*.iml
 
 # misc
 npm-debug.log
