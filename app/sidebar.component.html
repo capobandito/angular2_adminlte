@@ -31,12 +31,12 @@
         <ul class="sidebar-menu">
             <li class="header">Menu</li>
             <!-- Optionally, you can add icons to the links -->
-            <li class="active"><a href="index.html"><i class="fa fa-clock-o"></i><span>Menu</span></a></li>
+            <li class="active"><a [routerLink]="['/scheduler']"><i class="fa fa-clock-o"></i><span>Menu</span></a></li>
             <li class="treeview">
                 <a href="#"><i class="fa fa-link"></i> <span>A</span> <i class="fa fa-angle-left pull-right"></i></a>
                 <ul class="treeview-menu">
-                    <li><a href="#"><i class="fa fa-calendar"></i><span>Submenu A1</span></a></li>
-                    <li><a href="#"><i class="fa fa-file-code-o" aria-hidden="true"></i><span>Submenu A2</span></a></li>
+                    <li><a [routerLink]="['/batch-import']"><i class="fa fa-calendar"></i><span>Submenu A1</span></a></li>
+                    <li><a [routerLink]="['/import']"><i class="fa fa-file-code-o" aria-hidden="true"></i><span>Submenu A2</span></a></li>
                 </ul>
             </li>
             <li class="treeview">

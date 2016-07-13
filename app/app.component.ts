@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {ROUTER_DIRECTIVES} from '@angular/router-deprecated';
+import {ROUTER_DIRECTIVES} from '@angular/router';
 
 import {SidebarComponent} from './sidebar.component';
 
@@ -9,7 +9,7 @@ declare var $:any;
 @Component({
     selector: 'my-app',
     templateUrl: 'app/app.component.html',
-    directives: [SidebarComponent]
+    directives: [ROUTER_DIRECTIVES, SidebarComponent]
 })
 
 export class AppComponent implements OnInit{
