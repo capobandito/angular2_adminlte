@@ -3,7 +3,6 @@ import {ROUTER_DIRECTIVES} from '@angular/router';
 
 import {SidebarComponent} from './sidebar.component';
 
-declare var jQuery:any;
 declare var $:any;
 
 @Component({
@@ -18,7 +17,7 @@ export class AppComponent implements OnInit{
         //Easy access to options
         var o = $.AdminLTE.options;
 
-        jQuery.AdminLTE.layout.activate();
+        $.AdminLTE.layout.activate();
 
         //Enable control sidebar
         if (o.enableControlSidebar) {
